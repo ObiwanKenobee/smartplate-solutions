@@ -1,4 +1,4 @@
-import { DollarSign, Users, Clock, AlertTriangle } from "lucide-react";
+import { DollarSign, Users, Clock, AlertTriangle, CreditCard, TrendingUp } from "lucide-react";
 import { DashboardCard } from "./DashboardCard";
 
 export const StatsDisplay = () => {
@@ -11,24 +11,24 @@ export const StatsDisplay = () => {
         </p>
       </DashboardCard>
       
-      <DashboardCard title="Labor Costs Today" icon={<DollarSign className="h-4 w-4" />}>
-        <div className="text-2xl font-bold">$1,458.25</div>
+      <DashboardCard title="Today's Sales" icon={<DollarSign className="h-4 w-4" />}>
+        <div className="text-2xl font-bold">$3,458.25</div>
         <p className="text-xs text-muted-foreground">
-          Within daily budget
+          +15% from yesterday
         </p>
       </DashboardCard>
       
-      <DashboardCard title="Upcoming Shifts" icon={<Clock className="h-4 w-4" />}>
+      <DashboardCard title="Active Orders" icon={<Clock className="h-4 w-4" />}>
         <div className="text-2xl font-bold">8</div>
         <p className="text-xs text-muted-foreground">
-          Next shift starts in 2h
+          3 pending, 5 in progress
         </p>
       </DashboardCard>
 
-      <DashboardCard title="Schedule Conflicts" icon={<AlertTriangle className="h-4 w-4" />}>
-        <div className="text-2xl font-bold">2</div>
+      <DashboardCard title="Payment Status" icon={<CreditCard className="h-4 w-4" />}>
+        <div className="text-2xl font-bold">98%</div>
         <p className="text-xs text-muted-foreground">
-          Requires attention
+          Successful transactions
         </p>
       </DashboardCard>
     </div>
