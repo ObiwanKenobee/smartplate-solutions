@@ -39,7 +39,7 @@ export const OrdersOverview = () => {
                       ? "default"
                       : order.status === "In Progress"
                       ? "secondary"
-                      : "success"
+                      : "outline"
                   }
                 >
                   {order.status}
